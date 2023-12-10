@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Side Navbar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Sidebar Styles */
+    .sidebar {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      right: 0; /* Change left to right */
+      background-color: #111;
+      padding-top: 20px;
+      padding-right: 10px; /* Change padding-left to padding-right */
+      color: white;
+      overflow-x: hidden;
+      transition: 0.5s;
+    }
+
+    .sidebar a {
+      text-decoration: none;
+      font-size: 18px;
+      color: white;
+      display: block;
+      padding: 15px 0;
+      transition: 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .sidebar-close-btn {
+      position: absolute;
+      top: 0;
+      right: 10px; /* Adjust left positioning */
+      font-size: 30px;
+      cursor: pointer;
+      color: white;
+      background: none;
+      border: none;
+    }
+
+    /* Page Content Styles */
+    .content {
+      margin-right: 0; /* Adjust margin-left to margin-right */
+      padding: 16px;
+      transition: margin-right 0.5s; /* Adjust transition property */
+    }
+
+    /* Hamburger Button Styles */
+    .open-btn {
+      font-size: 30px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      color: rgb(42, 40, 40);
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar" id="mySidebar">
+  <button class="sidebar-close-btn" onclick="toggleSidebar()">×</button>
+  <a href="#" onclick="showContent('profile')">Profile</a>
+  <a href="#" onclick="showContent('contact')">Contact</a>
+  <a href="#" onclick="showContent('logout')">Logout</a>
+</div>
+
+<!-- Page Content -->
+<div class="content">
+  <button class="open-btn" onclick="toggleSidebar()">☰</button>
+  <h1>Welcome to your Dashboard</h1>
+  <p id="pageContent">Select an option from the sidebar.</p>
+</div>
+
+<!-- JavaScript -->
+<script>
+  function toggleSidebar() {
+    const sidebar = document.getElementById("mySidebar");
+    const content = document.getElementsByClassName("content")[0];
+
+    if (sidebar.style.width === "250px") {
+      sidebar.style.width = "0";
+      content.style.marginRight = "0"; // Adjust margin-left to margin-right
+    } else {
+      sidebar.style.width = "250px";
+      content.style.marginRight = "250px"; // Adjust margin-left to margin-right
+    }
+  }
+
+  function showContent(content) {
+    const pageContent = document.getElementById("pageContent");
+
+    switch (content) {
+      case 'profile':
+        pageContent.textContent = "This is your profile information.";
+        break;
+      case 'contact':
+        pageContent.textContent = "You can contact us at contact@example.com.";
+        break;
+      case 'logout':
+        pageContent.textContent = "You have been logged out. Goodbye!";
+        break;
+      default:
+        pageContent.textContent = "Select an option from the sidebar.";
+    }
+  }
+</script>
+
+</body>
+</html>

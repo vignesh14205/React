@@ -1,0 +1,40 @@
+.App {
+  text-align: center;
+}
+
+.Form {
+  height: 40vmin;
+  pointer-events: none;
+  border: 10px;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .Form {
+    animation: App-logo-spin infinite 0s linear;
+  }
+}
+.parent
+{
+  align-items: center;
+  margin-right: 500px;
+
+}
+
+.Form {
+ padding: 50px;
+ margin: 180px;
+ margin-right: 500px;
+ width: 450px;
+ border: 1px solid;
+  background-color: aquamarine;
+  border-radius: 10px;
+  box-shadow: 8px 8px 2px ;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
