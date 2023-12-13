@@ -1,6 +1,6 @@
 import React from "react"
 import Logo1 from './Logo1.png';
-import signup from './signup.jpg';
+import signup from './signup.png';
 class Signup extends React.Component
 {
     render()
@@ -18,16 +18,16 @@ class Signup extends React.Component
                     <form>
                     <p class="SUP">SIGNUP</p>
                     <label for="Uname">Username</label>
-                    <input type="text" id="Uname"></input>
+                    <input type="text" id="Uname" placeholder="Username*"></input>
                     <br></br>
                     <label for="email">Email</label>
-                    <input type="email" id="email"></input>
+                    <input type="email" id="email" placeholder="Email*"></input>
                     <br></br>
                     <label for="Pass">CreatePassword</label>
-                    <input type="password" id="Pass"></input>
+                    <input type="password" id="Pass" placeholder="Password*"></input>
                     <br></br>
                     <label for="number">PhoneNumber</label>
-                    <input type="number" id="number"></input>
+                    <input type="tel" id="number" placeholder="Number*"></input>
                     <br></br>
                     <br></br>
                     <button class="submit">SignUp</button>
