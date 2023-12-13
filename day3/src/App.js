@@ -1,10 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
-import propsFunctional
+import Signup from './component1/sample';
 function App() {
   return (
     <div className="App">
-      <propsFunctional/>
+      <Signup/>
     </div>
   );
 }

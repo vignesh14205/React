@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sform
+{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  text-align: center;
+  border: 2px solid rgb(48, 109, 162);
+  border-radius: 18px;
+  height: 360px;
+  width: 550px;
+  margin-top: 85px;
+  margin-left: 490px;
+  box-shadow: 5px 5px 2px rgb(69, 77, 81);
+
+}
+.form2
+{
+  text-align: center;
+  padding: 10px;
+  border: 2px solid rgb(48, 109, 162);
+  border-radius: 18px;
+  margin-top: 21px;
+  margin-left: 70px;
+  height: 300px;
+  width: 180px;
 }
 
-.App-link {
-  color: #61dafb;
+.SUP
+{
+  color:rgb(48, 109, 162);
+  text-shadow: 1px 1px 2px;
+  font-size: large;
+  font-weight: 600;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#Uname
+{
+  border-radius: 8px;
+  height: 20px;
+  width: 145px;
+  box-shadow: 2px 2px 1px gray;
+  border: 2px solid rgb(48, 109, 162);
+}
+#Pass
+{
+  border-radius: 8px;
+  height: 20px;
+  width: 145px;
+  box-shadow: 2px 2px 1px gray;
+  border: 2px solid rgb(48, 109, 162);
+}
+#email
+{
+  border-radius: 8px;
+  height: 20px;
+  width: 145px;
+  box-shadow: 2px 2px 1px gray;
+  border: 2px solid rgb(48, 109, 162);
+}
+#number
+{
+  border-radius: 8px;
+  height: 20px;
+  width: 145px;
+  box-shadow: 2px 2px 1px gray;
+  border: 2px solid rgb(48, 109, 162);
+}
+
+.logo{
+align-items: center;
+display: flex;
+flex-direction: row;
+margin-top: 110px;
+margin-left: 600px;
+}
+
+.head
+{
+  color: rgb(48, 109, 162);
+  font-weight: 700;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  text-shadow: 2px 1px 3px;
+}
+
+.img2
+{
+  height: 80px;
+  width: 110px;
+}
+
+.img1
+{
+  height:200px;
+  width: 210px;
+  margin-top: 55px;
+  margin-left: 40px;
+}
+
+.submit{
+  border-radius: 8px;
+  padding: 5px;
+  height: 25px;
+  width: 75px;
+  margin-bottom:10px;
+  box-shadow: 2px 2px 1px gray;
+  border: 2px solid rgb(48, 109, 162);
+ background-color:whitesmoke;
 }
