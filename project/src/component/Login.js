@@ -1,4 +1,4 @@
-import LoginImage from './LoginImage.jpg';
+import login from './login.png';
 import Logo1 from './Logo1.png';
 
 function Login()
@@ -10,22 +10,22 @@ function Login()
          <h1 class="head">SmartCart</h1>
          </div>
          <div className="main">
-         <img class="img1" src={LoginImage} alt="LoginImage"/>
+         <img class="img1" src={login} alt="LoginImage"/>
          <div className="Login">
          <form>
          <p class="Lname">LOGIN</p>
          <label for="username">Username</label>
-         <input type="text" id="username"></input>
+         <input type="text" id="username" placeholder='Username*'></input>
          <br></br>
          <label for="password">Password</label> 
-         <input type="password" id="password"></input>
+         <input type="password" id="password" placeholder='Password*'></input>
          <br></br>
          <br></br>
          <button class="submit">SignIn</button>
          <br></br>
          <br></br>
          <label for="newuser">NewUser?</label>
-         <a href='#' class="sigin">Signup</a>
+         <a href='Signup.js' class="sigin">Signup</a>
          </form>
          </div>
          </div>
