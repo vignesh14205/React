@@ -65,6 +65,7 @@ import Default from './component/Default';
 import Dynamic from './component/Dynamic';
 import TwoDynamic from './component/TwoDynamic';
 import Parent from './component/ParentChild';
+import Test from './component/Test';
 function App(){
   return(
     <div className='App'>
@@ -74,10 +75,11 @@ function App(){
       {/* <State/> */}
       {/* <StateFunction />
       <StateObj/> */}
-      <Dynamic/>
+      {/* <Dynamic/>
       <TwoDynamic/>
       <Default/>
-      <Parent/>
+      <Parent/> */}
+      <Test/>
     </div>
   );
 }
