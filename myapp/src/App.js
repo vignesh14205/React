@@ -66,9 +66,13 @@ import Dynamic from './component/Dynamic';
 import TwoDynamic from './component/TwoDynamic';
 import Parent from './component/ParentChild';
 import Test from './component/Test';
+import List from './component/List';
+import Key  from 'react';
+import Display from './component/List1';
+import DisplayFunction from './component/List1';
 function App(){
   return(
-    <div className='App'>
+    <div>
       {/* <PropsFunctional name='vignesh'/>
       <PropsClass college='skct'/>
       <PropsPara name1='cbe'/> */}
@@ -79,7 +83,10 @@ function App(){
       <TwoDynamic/>
       <Default/>
       <Parent/> */}
-      <Test/>
+      {/* <Test/> */}
+      <List/>
+      <Key/>
+      {/* <DisplayFunction/> */}
     </div>
   );
 }
